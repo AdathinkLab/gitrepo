@@ -9,14 +9,41 @@
 </head>
 
 <body>
+
+    <header>
+    <button class="btn" type="button" onclick="saludo()">saludar</button>
+
+    </header>
     
+    <section>
+        <img class="imagen1" 
+        src="https://cdn-prod.medicalnewstoday.com/content/images/articles/326/326253/corgi-and-terrier-running.jpg">
+    </section>
     <script>
         function saludo(nombre) {
-            alert("Bienvenido " + nombre)
+            nombre = prompt("cual es tu nombre")
+            alert("Bienvenido a ... " + nombre)
         }
 
-        saludo( prompt("Cual es tu nombre") )
+        //saludo( prompt("Cual es tu nombre") )
     </script>
+    
+    <style>
+        .imagen1{
+            width: 100%;
+            height: 100vh;
+
+        }
+        .btn{
+            width: 100px;
+            height: 50px;
+            background: red;
+            border: 1px solid black;
+            color: white;
+            font-size: 20px;
+
+        }
+    </style>
 
 </body>
 
